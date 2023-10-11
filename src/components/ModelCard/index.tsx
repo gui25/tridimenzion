@@ -77,7 +77,7 @@ const ModelCard: React.FC<ModelCardProps> = ({
               onClick={handleLinkClick}
               className="block w-full py-4 text-xl font-bold bg-indigo-600 rounded-full hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50 text-center tracking-wide"
             >
-              View in 3D
+              <span className="px-6 py-2 inline-block">View in 3D</span>
             </Link>
           )}
         </div>
