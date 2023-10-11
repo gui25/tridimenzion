@@ -2,12 +2,6 @@ import '@testing-library/jest-dom'
 import 'jest-styled-components'
 import 'resize-observer-polyfill/dist/ResizeObserver.global';
 
-window.ResizeObserver = jest.fn(() => ({
-  observe: jest.fn(),
-  unobserve: jest.fn(),
-  disconnect: jest.fn()
-}))
-
 Object.defineProperty(HTMLCanvasElement.prototype, 'getContext', {
   value: jest.fn().mockReturnValue({
   fillRect: jest.fn(),
