@@ -1,56 +1,75 @@
+# Tridimenzion 🎨
 
-![React Avançado](https://raw.githubusercontent.com/React-Avancado/boilerplate/master/public/img/logo-gh.svg)
+Tridimenzion is a gallery of 3D ART, showcasing various artworks created using Three.js, React Three Fiber, and Drei. This project is built with a modern tech stack, including TypeScript, Next.js, Styled Components, Jest, React Testing Library, Storybook, Eslint, Prettier, and Husky.
 
-This is a [Next.js](https://nextjs.org/) boilerplate to be used in a course called [React Avançado](https://reactavancado.com.br/).
-![ci](https://github.com/React-Avancado/boilerplate-apps-router/workflows/ci/badge.svg)
-## What is inside?
+## Project Goals 🎯
 
-This project uses lot of stuff as:
+- **Increase Test Coverage**: One of the goals of this project is to increase the test coverage to ensure robustness and reliability of the application.
 
-- [TypeScript](https://www.typescriptlang.org/)
-- [NextJS](https://nextjs.org/)
-- [Styled Components](https://styled-components.com/)
-- [Jest](https://jestjs.io/)
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [Storybook](https://storybook.js.org/)
-- [Eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [Husky](https://github.com/typicode/husky)
+- **Refine Componentization**: The project aims to refine the componentization for better maintainability, reusability, and readability of the codebase.
 
-## Getting Started
+- **Improve Polishing**: Initially, this project was developed rapidly, and as a result, certain aspects may not be as polished. The goal is to iterate and improve on these aspects to enhance the overall user experience and code quality.
 
-First, run the development server:
+## Tech Stack 🛠️
 
-```bash
-npm run dev
-```
+- [TypeScript](https://www.typescriptlang.org/): Strongly typed superset of JavaScript.
+- [NextJS](https://nextjs.org/): React-based framework for server-side rendering and static site generation.
+- [Styled Components](https://styled-components.com/): CSS-in-JS library for styled components.
+- [Three.js](https://threejs.org/): JavaScript library for creating 3D graphics.
+- [React Three Fiber](https://github.com/pmndrs/react-three-fiber): A React renderer for Three.js.
+- [Drei](https://github.com/pmndrs/drei): Collection of useful Three.js components.
+- [Jest](https://jestjs.io/): JavaScript testing framework.
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro): Testing utility for React.
+- [Storybook](https://storybook.js.org/): Tool for building and documenting components.
+- [Eslint](https://eslint.org/): Linting utility for maintaining code consistency.
+- [Prettier](https://prettier.io/): Code formatter for consistent code style.
+- [Husky](https://github.com/typicode/husky): Git hooks tool.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Available Commands 🚀
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- `dev`: Run the application on `localhost:3000`.
+- `build`: Create the production build version.
+- `start`: Start a simple server with the production build code.
+- `lint`: Run the linter on all components and pages.
+- `test`: Run Jest to test all components and pages.
+- `test:watch`: Run Jest in watch mode.
+- `storybook`: Run Storybook on `localhost:6006`.
+- `build-storybook`: Create the build version of Storybook.
 
-## Commands
+## Installation 🚀
 
-- `dev`: runs your application on `localhost:3000`
-- `build`: creates the production build version
-- `start`: starts a simple server with the build production code
-- `lint`: runs the linter in all components and pages
-- `test`: runs jest to test all components and pages
-- `test:watch`: runs jest in watch mode
-- `storybook`: runs storybook on `localhost:6006`
-- `build-storybook`: create the build version of storybook
+1. **Clone the repository:**
 
-## Learn More
+   ```bash
+   git clone https://github.com/gui25/tridimenzion.git
+   cd tridimenzion
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm install
+   # or
+   yarn install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. **Usage 🏃‍♂️:**
 
-## Deploy on Vercel
+    To start the development server, run:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    npm run dev
+    # or
+    yarn dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This will start the Next.js development server, and you can access the project at http://localhost:3000.
+
+## 3D Integration 🎨
+
+This project integrates Three.js for 3D rendering using React Three Fiber (`react-three-fiber`) and Drei.
+
+## Contributing 🤝
+
+Feel free to contribute to this project! Open an issue or submit a pull request to suggest improvements or add new features.
+
+## License 📝
+
+This project is licensed under the [MIT License](LICENSE).

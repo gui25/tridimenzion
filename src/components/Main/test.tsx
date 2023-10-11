@@ -1,26 +1,15 @@
+import React from 'react'
 import { render, screen } from '@testing-library/react'
+import LandingPage from './'
 
-import Main from '.'
+test('LandingPage renders correctly', () => {
+  const { asFragment } = render(<LandingPage />)
 
-describe('<Main />', () => {
-  it('should render the heading', () => {
-    // renderiza o component
-    const { container } = render(<Main />)
+  const titleElement = screen.getByText('Explore our Stunning 3D Models')
+  expect(titleElement).toBeInTheDocument()
 
-    // busca o elemento e verifica a existência dele
-    expect(
-      screen.getByRole('heading', { name: /react avançado/i })
-    ).toBeInTheDocument()
+  const descriptionElement = screen.getByText('Select a model to view in 3D:')
+  expect(descriptionElement).toBeInTheDocument()
 
-    // gerar snapshot
-    expect(container.firstChild).toMatchSnapshot()
-  })
-
-  it('should render the colors correctly', () => {
-    // renderiza o component
-    const { container } = render(<Main />)
-
-    // verifica se o background-color está correto
-    expect(container.firstChild).toHaveStyle({ 'background-color': '#06092b' })
-  })
+  expect(asFragment()).toMatchSnapshot()
 })
