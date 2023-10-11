@@ -73,6 +73,7 @@
     "@types/find-cache-dir": "^5.0.0",
     "@typescript-eslint/eslint-plugin": "^6.7.0",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-jest": "^27.4.2",
     "eslint-plugin-storybook": "^0.6.13",
     "husky": "^8.0.3",
     "identity-obj-proxy": "^3.0.0",
